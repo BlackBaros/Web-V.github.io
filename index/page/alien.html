@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien</title>
+    <link rel="icon" href="../img/icon.jpg">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .top {
+            width: 100%;
+            height: 50px;
+            background-color: whitesmoke;
+        }
+
+        .top_left {
+            float: left;
+        }
+
+        input.top_form:hover {
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .7);
+        }
+
+        .main {
+            width: 100%;
+            height: 780px;
+            margin: 0 auto;
+            overflow: hidden;
+            background-image: url(../img/alien_bg.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 0 center;
+            background-size: cover;
+        }
+
+        .main_video {
+            width: 1280px;
+            height: 720px;
+            margin: 30px auto;
+        }
+
+        .bottom {
+            height: 350px;
+            background-color: whitesmoke;
+        }
+
+        .bottom_left {
+            float: left;
+            width: 60%;
+            height: 350px;
+        }
+
+        .bottom_right {
+            float: right;
+            width: 40%;
+            height: 350px;
+        }
+
+        input.bot_review:hover {
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top_left">
+            <form action="search.html" target="_blank">
+                <input type="text" placeholder="&nbsp;Search for movies here"
+                    style="width: 350px;height: 25px; border-radius: 15px;margin: 10px 50px;margin-right: 0; padding-left: 10px;"
+                    class="top_form">
+                <input type="submit" value="Search"
+                    style="width: 70px;height: 30px; border-radius: 15px;margin-top: 10px; color: inherit; font-size: medium;">
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_video"><video controls>
+                <source src="../img/alien.mp4" type="video/mp4">
+            </video></div>
+    </div>
+    <div class="bottom" id="bot">
+        <div class="bottom_left">
+            <form action="">
+                <div style="width: 450px;margin: 0 auto;">
+                    <p style="margin-top: 15px;font-size: large;">Review:&nbsp;&nbsp;<input type="text"
+                            placeholder="&nbsp;You can comment here" class="bot_review"
+                            style="width: 450px;height: 50px;">
+                    </p><br>
+                    <p style="font-size: large;">Email:&nbsp;&nbsp;<input type="text" class="bot_review"
+                            style="width: 266px;">&nbsp;
+                        <select>
+                            <option></option>
+                            <option>@gmail.com</option>
+                            <option>@qq.com</option>
+                            <option>@163.com</option>
+                            <option>@hotmail.com</option>
+                        </select>
+                    </p><br>
+                    <p style="font-size: large;">Sex:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex"
+                            value="man" id="man">
+                        <label for="man">Male</label>
+                        &nbsp;&nbsp;<input type="radio" name="sex" value="woman" id="woman">
+                        <label for="woman">Female</label>
+                    </p><br>
+                    <p style="font-size: large;">Preference:&nbsp;&nbsp;<input type="checkbox" name="hobby"
+                            value="Actionmovie" id="am"><label for="am">Action movie</label>
+                        &nbsp;&nbsp;<input type="checkbox" name="hobby" value="Comedymovie" id="cm"><label
+                            for="cm">Comedy
+                            movie</label> <br>
+                        <input type="checkbox" name="hobby" value="Lovemovie" id="lm"><label for="lm">Love movie</label>
+                        &nbsp;&nbsp;<input type="checkbox" name="hobby" value="Suspensemovie" id="sm"><label
+                            for="sm">Suspense movie</label>
+                        &nbsp;&nbsp;<input type="checkbox" name="hobby" value="Horrormovie" id="hm"><label
+                            for="hm">Horror
+                            movie</label>
+                    </p><br>
+                    <hr><br>
+                    <div style="width: 250px;margin-left: 120px;"><input type="submit" value="Submit"
+                            style="width: 80px;height: 40px;border-radius: 20px;font-size: medium;">
+                        <input type="reset" value="Reset"
+                            style="width: 80px;height: 40px;border-radius: 20px;font-size: medium;">
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="bottom_right">
+            <div style="height: 50px;margin: 30px;">
+                <h1 style="line-height: 50px;text-align: center;">Production staff</h1>
+            </div>
+            <div style="height: 200px;">
+                <p style="line-height: 40px; text-align: center;font-weight: 700;">ZhouYang Li<br>
+                    Tao Jing<br>
+                    YuHao Jiang<br>
+                    Ming Sun<br>
+                    LiangSu Guo
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
